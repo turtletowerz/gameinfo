@@ -11,8 +11,8 @@
 	],
 
 	"contact": {
-		"homepage": "https://gitlab.com/ifcifc94/gameinfo-mod",
-		"sources": "https://gitlab.com/ifcifc94/gameinfo-mod"
+		"homepage": "https://github.com/turtletowerz/gameinfo",
+		"sources": "https://github.com/turtletowerz/gameinfo"
 	},
 
 	"license": "GNU LGPL V3",
