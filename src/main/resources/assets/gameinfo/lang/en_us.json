@@ -1,0 +1,37 @@
+{
+  "text.gameinfo.day":                        "Day",
+  "text.gameinfo.time":                       "Time",
+  "text.gameinfo.biome":                      "Biome",
+  "text.gameinfo.light":                      "Light",
+  "text.gameinfo.speed":                      "Speed",
+
+  "text.gameinfo.lastdeathposition":          "Last Death Point",
+  "text.gameinfo.disabledeathmessage":        "Disable death message",
+  "text.gameinfo.enabledeathmessage":         "Enable death message",
+  "text.gameinfo.disableshowinfo":            "Disable show info",
+  "text.gameinfo.enableshowinfo":             "Enable show info",
+
+  "key.gameinfo.toggleshow":                  "Toggle show",
+  "key.gameinfo.deathmessage":                "Toggle death message",
+  "key.gameinfo.opensettings":                "Open Settings",
+  "key.gameinfo.rotatehud":                   "Rotate HUD",
+
+  "config.gameinfo.main":                     "Main Settings",
+  "config.gameinfo.ui":                       "UI Settings",
+  "config.gameinfo.righthud":                 "Right HUD",
+  "config.gameinfo.downhud":                  "Bottom HUD",
+  "config.gameinfo.hiddendeathmessage":       "Hidden Death Message",
+  "config.gameinfo.hidden":                   "Hidden HUD",
+  "config.gameinfo.hiddenspeed":              "Hidden Speed",
+  "config.gameinfo.hiddenbiome":              "Hidden Biome",
+  "config.gameinfo.hiddenfps":                "Hidden FPS in HUD",
+  "config.gameinfo.hiddenlight":              "Hidden Light in HUD",
+  "config.gameinfo.hiddenblocklight":         "Hidden Block Light",
+  "config.gameinfo.hiddensunlight":           "Hidden Sun Light",
+  "config.gameinfo.hiddensunlightifzero":     "Hidden Sun Light If Zero",
+  "config.gameinfo.usescale":                 "Enable scale",
+  "config.gameinfo.sortwidth":                "Order by width",
+  "config.gameinfo.sortreverse":              "Reverse order",
+  "config.gameinfo.scalex":                   "Scale X",
+  "config.gameinfo.scaley":                   "Scale Y"
+}

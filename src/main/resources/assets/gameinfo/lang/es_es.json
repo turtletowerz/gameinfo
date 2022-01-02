@@ -1,0 +1,37 @@
+{
+  "text.gameinfo.day":                        "Dia",
+  "text.gameinfo.time":                       "Hora",
+  "text.gameinfo.biome":                      "Bioma",
+  "text.gameinfo.light":                      "Luz",
+  "text.gameinfo.speed":                      "Velocidad",
+
+  "text.gameinfo.lastdeathposition":          "Último punto de muerte",
+  "text.gameinfo.disabledeathmessage":        "Mensaje de muerte desactivado",
+  "text.gameinfo.enabledeathmessage":         "Mensaje de muerte activado",
+  "text.gameinfo.disableshowinfo":            "Informacio en pantalla desactivada",
+  "text.gameinfo.enableshowinfo":             "Informacio en pantalla activada",
+
+  "key.gameinfo.toggleshow":                  "Alternar Info",
+  "key.gameinfo.deathmessage":                "Alternar Mensaje de muerte",
+  "key.gameinfo.opensettings":                "Abrir Menu de Configuración",
+  "key.gameinfo.rotatehud":                   "Rotar HUD",
+
+  "config.gameinfo.main":                     "Configuracion Principal",
+  "config.gameinfo.ui":                       "Configuracion UI",
+  "config.gameinfo.righthud":                 "Derecha HUD",
+  "config.gameinfo.downhud":                  "Abajo HUD",
+  "config.gameinfo.hiddendeathmessage":       "Ocultar mensaje de muerte",
+  "config.gameinfo.hidden":                   "Ocultar HUD",
+  "config.gameinfo.hiddenspeed":              "Ocultar Velocidad",
+  "config.gameinfo.hiddenbiome":              "Ocultar Bioma",
+  "config.gameinfo.hiddenfps":                "Ocultar FPS en HUD",
+  "config.gameinfo.hiddenlight":              "Ocultar luz en HUD",
+  "config.gameinfo.hiddenblocklight":         "Ocultar luz de Bloque",
+  "config.gameinfo.hiddensunlight":           "Ocultar luz del sol",
+  "config.gameinfo.hiddensunlightifzero":     "Ocultar luz del sol si es cero",
+  "config.gameinfo.usescale":                 "Activar escalado",
+  "config.gameinfo.sortwidth":                "Ordenar por largo",
+  "config.gameinfo.sortreverse":              "Invertir orden",
+  "config.gameinfo.scalex":                   "Escalado en X",
+  "config.gameinfo.scaley":                   "Escalado en Y"
+}

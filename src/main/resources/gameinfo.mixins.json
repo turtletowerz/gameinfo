@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "com.turtletowerz.gameinfo.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"client": [
+		"FPSClientMixin",
+		"MinecraftClientMixin"
+	],
+
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

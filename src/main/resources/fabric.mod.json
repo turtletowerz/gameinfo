@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "gameinfo",
+	"version": "${version}",
+
+	"name": "GameInfo",
+	"description": "It shows information on the game screen, player position, nether/overworld coordinate conversion, game time and sends a chat message with the coordinates of your last death point.",
+	"authors": [
+		"ifcifc",
+		"turtletowerz"
+	],
+
+	"contact": {
+		"homepage": "https://gitlab.com/ifcifc94/gameinfo-mod",
+		"sources": "https://gitlab.com/ifcifc94/gameinfo-mod"
+	},
+
+	"license": "GNU LGPL V3",
+	"icon": "assets/gameinfo/icon.png",
+
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.turtletowerz.gameinfo.GameInfo"
+		],
+		
+		"modmenu": [
+			"com.turtletowerz.gameinfo.config.ModMenu"
+		]
+	},
+
+	"mixins": [
+		"gameinfo.mixins.json"
+	],
+
+	"depends": {
+		"minecraft": ">=1.18",
+		"fabricloader": ">=0.12.12",
+		"fabric": ">=0.44.0"
+	}
+}
