@@ -25,8 +25,6 @@ public class Render {
 		HudRenderCallback.EVENT.register((matricies, tickDelta) -> {
 			MinecraftClient client = MinecraftClient.getInstance();
 			Coords.updatePos(client);
-			//Coords.checkDeath(client);
-			//Coords.update(client);
 			
 			if (Config.INSTANCE.Hidden || updating)
 				return;

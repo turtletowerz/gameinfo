@@ -14,7 +14,6 @@ public class TranslatedText {
 	public static MutableText LIGHT;
 	public static MutableText SPEED;
 
-	//public static TranslatableText LASTDEATHPOSITION;
 	public static MutableText DISABLEDEATHMESSAGE;
 	public static MutableText ENABLEDEATHMESSAGE;
 	public static MutableText DISABLESHOWINFO;
@@ -37,7 +36,6 @@ public class TranslatedText {
 		LIGHT = new TranslatableText("text.gameinfo.light");
 		SPEED = new TranslatableText("text.gameinfo.speed");
 	
-		//LASTDEATHPOSITION = new TranslatableText("text.gameinfo.lastdeathposition");
 		DISABLEDEATHMESSAGE = new TranslatableText("text.gameinfo.disabledeathmessage");
 		ENABLEDEATHMESSAGE = new TranslatableText("text.gameinfo.enabledeathmessage");
 		DISABLESHOWINFO = new TranslatableText("text.gameinfo.disableshowinfo");

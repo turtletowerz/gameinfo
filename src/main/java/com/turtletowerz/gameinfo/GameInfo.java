@@ -7,8 +7,6 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;
 import net.minecraft.util.Util;
 
-// TODO: all the modules need to be updated to support translations
-// TODO: check GameOptions class to see if you can hook when the langauge changes
 public class GameInfo implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
