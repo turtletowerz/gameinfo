@@ -15,9 +15,10 @@ This fork makes a significant number of removals of (what I found to be) unneces
 
 ### Current known issues
 - The configuration does not save yet, this will be in the next update
-- The speed setting does not work, so it's enabled by default. I'll fix it in the near future
-- Most translations for the settings and system messages work, but not the UI itself. This will be addressed when I find a better way to render text
+- The speed setting does not work, so it's disabled by default. I'll fix it in the near future
+- Most translations for th e settings and system messages work, but not the UI itself. This will be addressed when I find a better way to render text
 - This probably works on previous versions of Minecraft, but I have yet to test them
+- Slime chunk notification doesn't seem to appear
 
 ## Compiling
 - git clone https://github.com/turtletowerz/gameinfo.git
