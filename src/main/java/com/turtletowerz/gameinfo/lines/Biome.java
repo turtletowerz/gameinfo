@@ -8,21 +8,17 @@ import net.minecraft.util.registry.Registry;
 
 public class Biome extends Line {
 	public static boolean isSlimeChunk(MinecraftClient client) {
-		if (client.isIntegratedServerRunning())
+		if (!client.isIntegratedServerRunning())
 			return false;
 
-		try {
-			final long seed = client.getServer().getWorlds().iterator().next().getSeed();
-			ChunkPos chunkpos = new ChunkPos(Coords.getBlockPos());
-			long chunkX = chunkpos.x, chunkZ = chunkpos.z;
-	
-			return new Random(seed + 
-				chunkX * chunkX * 4987142 + chunkX * 5947611 +
-				chunkZ * chunkZ * 4392871L + (chunkZ * 389711) ^ 987234911L)
-			.nextInt(10) == 0;			
-		} catch (Exception e) {
-			return false;
-		}
+		final long seed = client.getServer().getWorlds().iterator().next().getSeed();
+		ChunkPos chunkpos = new ChunkPos(Coords.getBlockPos());
+		long chunkX = chunkpos.x, chunkZ = chunkpos.z;
+
+		return new Random(seed + 
+			chunkX * chunkX * 4987142 + chunkX * 5947611 +
+			chunkZ * chunkZ * 4392871L + (chunkZ * 389711) ^ 987234911L)
+		.nextInt(10) == 0;
 	}
 
 	@Override
