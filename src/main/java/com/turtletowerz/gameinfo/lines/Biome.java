@@ -11,14 +11,18 @@ public class Biome extends Line {
 		if (client.isIntegratedServerRunning())
 			return false;
 
-		final long seed = client.getServer().getWorlds().iterator().next().getSeed();
-		ChunkPos chunkpos = new ChunkPos(Coords.getBlockPos());
-		long chunkX = chunkpos.x, chunkZ = chunkpos.z;
-
-		return new Random(seed + 
-			chunkX * chunkX * 4987142 + chunkX * 5947611 +
-			chunkZ * chunkZ * 4392871L + (chunkZ * 389711) ^ 987234911L)
-		.nextInt(10) == 0;
+		try {
+			final long seed = client.getServer().getWorlds().iterator().next().getSeed();
+			ChunkPos chunkpos = new ChunkPos(Coords.getBlockPos());
+			long chunkX = chunkpos.x, chunkZ = chunkpos.z;
+	
+			return new Random(seed + 
+				chunkX * chunkX * 4987142 + chunkX * 5947611 +
+				chunkZ * chunkZ * 4392871L + (chunkZ * 389711) ^ 987234911L)
+			.nextInt(10) == 0;			
+		} catch (Exception e) {
+			return false;
+		}
 	}
 
 	@Override
