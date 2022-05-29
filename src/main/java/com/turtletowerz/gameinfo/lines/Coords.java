@@ -39,6 +39,11 @@ public class Coords extends Line {
 		return (capitalize ? StringUtils.capitalize(replaced) : replaced);
 	}
 
+	public static String toTitle(String str, boolean capitalize) {
+		String replaced = str.replace("_", " ").replace("the ", "");
+		return (capitalize ? StringUtils.capitalize(replaced) : replaced);
+	}
+
 	private static boolean aliveCache = false;
 	public static void updatePos(MinecraftClient client) {
 		oldpos = currpos;

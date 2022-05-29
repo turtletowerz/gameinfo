@@ -23,7 +23,7 @@ public class Biome extends Line {
 
 	@Override
 	public void update(MinecraftClient client) {
-		String biome = Coords.toTitle(client.world.getRegistryManager().get(Registry.BIOME_KEY).getId(client.world.getBiome(Coords.getBlockPos())), false);
+		String biome = Coords.toTitle(client.world.getRegistryManager().get(Registry.BIOME_KEY).getId(client.world.getBiome(Coords.getBlockPos()).value()), false);
 
 		this.text = "";
 		if (!Config.INSTANCE.HiddenBiome) {
