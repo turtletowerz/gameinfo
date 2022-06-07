@@ -4,7 +4,7 @@ import com.turtletowerz.gameinfo.GameInfo;
 import com.turtletowerz.gameinfo.config.Config;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.Entity;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
@@ -78,7 +78,7 @@ public class Coords extends Line {
 			}
 
 			String dim = toTitle(client.player.world.getRegistryKey().getValue(), true);
-			GameInfo.sendMessage(client, new TranslatableText("text.gameinfo.lastdeathposition")
+			GameInfo.sendMessage(client, Text.translatable("text.gameinfo.lastdeathposition")
 				.formatted(Formatting.YELLOW)
 				.append(": §f" + Coords.getCoords() + " §eDim: §f" + dim)
 			);

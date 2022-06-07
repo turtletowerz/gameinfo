@@ -8,8 +8,7 @@ import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
 import me.shedaniel.clothconfig2.impl.builders.SubCategoryBuilder;
-import net.minecraft.text.LiteralTextContent;
-import net.minecraft.text.TranslatableTextContent;
+import net.minecraft.text.Text;
 
 // Integrates GameInfo with the ModMenu API
 public class ModMenu implements ModMenuApi {
@@ -17,10 +16,10 @@ public class ModMenu implements ModMenuApi {
 
 	@SuppressWarnings("rawtypes")
 	public static ConfigBuilder getConfigBuilderScreen() {
-		ConfigBuilder builder = ConfigBuilder.create().transparentBackground().setTitle(new TranslatableTextContent("config.gameinfo.main"));
+		ConfigBuilder builder = ConfigBuilder.create().transparentBackground().setTitle(Text.translatable("config.gameinfo.main"));
 		ConfigEntryBuilder eb = builder.entryBuilder();
-		ConfigCategory general = builder.getOrCreateCategory(new TranslatableTextContent("config.gameinfo.main"));
-		SubCategoryBuilder gui = eb.startSubCategory(new TranslatableTextContent("config.gameinfo.ui"));
+		ConfigCategory general = builder.getOrCreateCategory(Text.translatable("config.gameinfo.main"));
+		SubCategoryBuilder gui = eb.startSubCategory(Text.translatable("config.gameinfo.ui"));
 
 		try {
 			for (Field f : Config.class.getFields()) {
@@ -35,9 +34,9 @@ public class ModMenu implements ModMenuApi {
 				String Key = "config.gameinfo." + f.getName().toLowerCase();
 				switch (e.Type()) {
 					case "BooleanToggle":
-						entry = eb.startBooleanToggle(new TranslatableTextContent(Key), f.getBoolean(Config.INSTANCE))
+						entry = eb.startBooleanToggle(Text.translatable(Key), f.getBoolean(Config.INSTANCE))
 							.setDefaultValue(f.getBoolean(defaults))
-							.setTooltip(new LiteralTextContent(e.Comment()))
+							.setTooltip(Text.literal(e.Comment()))
 							.setSaveConsumer(v -> {
 								try {
 									f.set(Config.INSTANCE, v);
@@ -48,10 +47,10 @@ public class ModMenu implements ModMenuApi {
 							.build();
 						break;
 					case "IntSlider":
-						entry = eb.startIntSlider(new TranslatableTextContent(Key), f.getInt(Config.INSTANCE), e.Min(),  e.Max())
+						entry = eb.startIntSlider(Text.translatable(Key), f.getInt(Config.INSTANCE), e.Min(),  e.Max())
 							.setDefaultValue(f.getInt(defaults))
-							.setTooltip(new LiteralTextContent(e.Comment()))
-							.setTextGetter(integer -> new LiteralTextContent("Mode: " + integer))
+							.setTooltip(Text.literal(e.Comment()))
+							.setTextGetter(integer -> Text.literal("Mode: " + integer))
 							.setSaveConsumer(v -> {
 								try {
 									f.set(Config.INSTANCE, v);
