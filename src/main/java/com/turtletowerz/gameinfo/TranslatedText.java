@@ -1,7 +1,7 @@
 package com.turtletowerz.gameinfo;
 
 import net.minecraft.text.MutableText;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.TranslatableTextContent;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Language;
 
@@ -30,15 +30,15 @@ public class TranslatedText {
 	public static void init(Language lang) {
 		languageCache = lang;
 
-		DAY = new TranslatableText("text.gameinfo.day").formatted(Formatting.YELLOW);
-		TIME = new TranslatableText("text.gameinfo.time");
-		BIOME = new TranslatableText("text.gameinfo.biome");
-		LIGHT = new TranslatableText("text.gameinfo.light");
-		SPEED = new TranslatableText("text.gameinfo.speed");
+		DAY = new TranslatableTextContent("text.gameinfo.day").formatted(Formatting.YELLOW);
+		TIME = new TranslatableTextContent("text.gameinfo.time");
+		BIOME = new TranslatableTextContent("text.gameinfo.biome");
+		LIGHT = new TranslatableTextContent("text.gameinfo.light");
+		SPEED = new TranslatableTextContent("text.gameinfo.speed");
 	
-		DISABLEDEATHMESSAGE = new TranslatableText("text.gameinfo.disabledeathmessage");
-		ENABLEDEATHMESSAGE = new TranslatableText("text.gameinfo.enabledeathmessage");
-		DISABLESHOWINFO = new TranslatableText("text.gameinfo.disableshowinfo");
-		ENABLESHOWINFO = new TranslatableText("text.gameinfo.enableshowinfo");
+		DISABLEDEATHMESSAGE = new TranslatableTextContent("text.gameinfo.disabledeathmessage");
+		ENABLEDEATHMESSAGE = new TranslatableTextContent("text.gameinfo.enabledeathmessage");
+		DISABLESHOWINFO = new TranslatableTextContent("text.gameinfo.disableshowinfo");
+		ENABLESHOWINFO = new TranslatableTextContent("text.gameinfo.enableshowinfo");
 	}
 }
