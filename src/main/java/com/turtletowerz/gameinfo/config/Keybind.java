@@ -2,10 +2,10 @@ package com.turtletowerz.gameinfo.config;
 
 import com.turtletowerz.gameinfo.GameInfo;
 import com.turtletowerz.gameinfo.Render;
-import com.turtletowerz.gameinfo.TranslatedText;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
+import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import org.lwjgl.glfw.GLFW;
 
@@ -24,8 +24,9 @@ public class Keybind {
 			Config.INSTANCE.HiddenDeathMessage = !Config.INSTANCE.HiddenDeathMessage;
 			Config.save();
 
-			GameInfo.sendMessage(client,
-				(Config.INSTANCE.Hidden ? TranslatedText.DISABLEDEATHMESSAGE : TranslatedText.ENABLEDEATHMESSAGE)
+			GameInfo.sendMessage(
+					client,
+					Text.translatable(Config.INSTANCE.Hidden ? "text.gameinfo.disabledeathmessage" : "text.gameinfo.enabledeathmessage")
 					.formatted(Formatting.BOLD)
 					.formatted(Formatting.YELLOW)
 			);
@@ -35,8 +36,9 @@ public class Keybind {
 			Config.INSTANCE.Hidden = !Config.INSTANCE.Hidden;
 			Config.save();
 			
-			GameInfo.sendMessage(client,
-				(Config.INSTANCE.Hidden ? TranslatedText.DISABLESHOWINFO : TranslatedText.ENABLESHOWINFO)
+			GameInfo.sendMessage(
+					client,
+					Text.translatable(Config.INSTANCE.Hidden ? "text.gameinfo.disableshowinfo" : "text.gameinfo.enableshowinfo")
 					.formatted(Formatting.BOLD)
 					.formatted(Formatting.YELLOW)
 			);

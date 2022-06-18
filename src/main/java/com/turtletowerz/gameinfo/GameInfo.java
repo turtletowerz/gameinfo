@@ -9,7 +9,6 @@ import net.minecraft.text.Text;
 public class GameInfo implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		TranslatedText.init();
 		Config.init();
 		Keybind.init();
 		Render.init();

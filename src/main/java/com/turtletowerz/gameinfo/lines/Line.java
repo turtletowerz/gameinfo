@@ -9,7 +9,6 @@ public abstract class Line {
 	public int pos;
 	String text;
 	int width;
-
 	float x;
 	float y;
 
